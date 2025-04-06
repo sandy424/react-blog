@@ -1,0 +1,20 @@
+.navbar {
+    width: 100%;
+    background-color: lightgray;
+    padding: 15px 0px;
+    text-align: right;
+}
+.menu {
+    color: black;
+    margin: 8px;
+    text-decoration: none;
+}
+.main{
+    font-family: 'Cafe24Ssurround', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 300;  
+}
