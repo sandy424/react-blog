@@ -20,7 +20,7 @@
     font-weight: 700;
 }
 .inputTitle {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     color: #262626;
 }
@@ -28,7 +28,7 @@
     width: 100%;
     outline: none;
     border: none;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
 }
 .inputWrap {

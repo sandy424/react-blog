@@ -1,14 +1,30 @@
 .navbar {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     background-color: lightgray;
     padding: 15px 0px;
-    text-align: right;
+    align-items: center;
+    top: 0;
+    
+}
+.menu-group {
+    display: flex;
+    align-items: center;
+    margin-right: 28px;
 }
 .menu {
     color: black;
-    margin: 8px;
+    margin-left: 20px;
     text-decoration: none;
+    font-size: 16px;
 }
+
+.mainLogo {
+    font-weight: 600;
+    font-size: 20px;
+}
+
 .main{
     font-family: 'Cafe24Ssurround', sans-serif;
     display: flex;

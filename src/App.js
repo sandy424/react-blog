@@ -5,6 +5,7 @@ import Login from './component/Login';
 import Mypage from './component/Mypage';
 import Diary from './component/Diary';
 import Home from './component/Home';
+import Sign from './component/Sign';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/Login' element={<Login/>}/>
+        <Route path='/Sign' element={<Sign/>}/>
         <Route path='/Mypage' element={<Mypage/>}/>
         <Route path='/Diary' element={<Diary/>}/>
       </Routes>

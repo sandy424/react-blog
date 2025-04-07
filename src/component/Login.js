@@ -33,7 +33,7 @@ export default function Login() {
         <div className='page'>
             <div className='title'>
                 <br/>
-                아이디와 비밀번호를 입력해주세요.
+                로그인
             </div>
 
             <div>
