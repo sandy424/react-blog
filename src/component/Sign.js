@@ -26,7 +26,7 @@ function Sign() {
         <div className='page'>
                     <div className='title'>
                         <br/>
-                        아이디와 비밀번호를 입력해주세요
+                        아이디와 비밀번호를<br/> 입력해주세요
                     </div>
         
                     <div>
@@ -46,7 +46,7 @@ function Sign() {
                         </div>
         
                         <div style={{marginTop: "18px"}} className='signView'>
-                            계정이 없으신가요? <Link className='signLink' to={'/Sign'}>회원가입</Link>
+                            이미 계정이 있으신가요? <Link className='signLink' to={'/Login'}>로그인</Link>
                         </div>
                     </div>
                 </div>

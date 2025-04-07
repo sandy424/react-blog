@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Link}  from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import './Login.css';
 
 const User = {
@@ -19,10 +19,13 @@ export default function Login() {
             [id]: value
         });
     }
+    const navigate = useNavigate();
 
     const onClick = () => {
         if(id === User.id && pw === User.pw) {
             alert('로그인 했습니다.');
+            navigate('/');
+
         }else {
             alert('등록되지 않은 회원이거나 입력한 값이 일치하지 않습니다.');
         }
