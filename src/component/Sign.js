@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Link, useNavigate } from 'react-router-dom';
-import './Style.css';
+import '../style/Style.css';
 
 function Sign() {
 
@@ -26,7 +26,7 @@ function Sign() {
         <div className='page'>
                     <div className='title'>
                         <br/>
-                        아이디와 비밀번호를<br/> 입력해주세요
+                        아이디와 비밀번호를 입력해주세요
                     </div>
         
                     <div>
