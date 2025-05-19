@@ -22,8 +22,13 @@ function Sign() {
             alert("아이디와 비밀번호를 모두 입력해주세요.");
             return;
         }
+        /* 비밀번호 유효성 적용 */
+        if (pw.length < 8) {
+            alert("비밀번호는 8자 이상이어야 합니다.");
+            return;
+        }
         /* 서버와 통신 추가 */  
-        const response = await fetch('/api/register', {
+        const response = await fetch('/api/signup', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ id,pw })
@@ -54,9 +59,9 @@ function Sign() {
                         <div className='inputWrap'>
                             <input type='password' id='pw' className='input' placeholder='your pw' value={pw} onChange={change}></input>
                         </div>
-                        {/* 로그인 버튼 */}
+                        {/* 회원가입 버튼 */}
                         <div style={{marginTop: "18px"}} className='loginBtn'>
-                            <button className='btn' onClick={onClick}>Login</button>
+                            <button className='btn' onClick={onClick}>Sign up</button>
                         </div>
         
                         <div style={{marginTop: "18px"}} className='signView'>
