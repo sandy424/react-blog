@@ -1,14 +1,19 @@
-const express = require('express');
-const bodyParser = require('body-parser');
+const express = require("express");
+const body = require('body-parser');
 const app = express();
-const PORT = 5000;
 
-app.use(bodyParser.json());
+const database = [
+    {id: sandy424, pw: 'sandy424'},
+];
 
-app.post('/api/signup', (req, res) => {
-    const{id, pw} = req.body;
+app.get("/", (req, res) => {
+    res.sendFile(__dirname + '/react-blog/src/component/Sign.js');
+});
 
-    app.listen(PORT, () => {
-        console.log("실행 중입니다.");
-    })
+app.get('/database', (req, res) => {
+    res.send(database);
+})
+
+app.listen(3000, function(){
+    console.log("서버 가동");
 });
