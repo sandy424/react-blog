@@ -28,11 +28,12 @@ function Sign() {
             return;
         }
         /* 서버와 통신 추가 */  
-        const response = await fetch('http://localhost:5000/api/signup', {
+        const response = await fetch('/api/sign', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ id,pw })
         });
+        const data = await response.json();
         
         if(response.ok){
             alert('회원가입이 완료되었습니다.');
