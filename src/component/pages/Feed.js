@@ -6,7 +6,7 @@ export default function Feed() {
     const navigate = useNavigate();
 
     return(
-        <div>
+        <>
             <div className='category'>
             <h4></h4>
             </div>
@@ -15,7 +15,7 @@ export default function Feed() {
                     
                 </div>
             </div>
-        </div>
+        </>
         
     );
 }
