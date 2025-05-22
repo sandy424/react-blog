@@ -11,8 +11,7 @@ function Header() {
                 </div>
                 <div className="menu-group">
                     <Link className="menu" to={'/Login'}>Login</Link>
-                    {/* <Link className="menu" to={'/Diary'}>Diary</Link>
-                    <Link className="menu" to={'/Mypage'}>Mypage</Link> */}
+                    <Link className="menu" to={'/Feed'}>Feed</Link>
                 </div>
             </div>
         </div>

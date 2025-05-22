@@ -2,15 +2,11 @@ import React, {useState} from 'react';
 import {Link, useNavigate} from 'react-router-dom';
 import '../style/Style.css';
 
-const User = {
-    id: 'sandy424',
-    pw: 'sandy424'
-}
-
 export default function Login() {
 
     const [inputs, setInputs] = useState({id: "", pw: ""});
     const {id, pw} = inputs;
+    const navigate = useNavigate();
 
     const change = (e) => {
         const {id, value} = e.target;
@@ -19,17 +15,13 @@ export default function Login() {
             [id]: value
         });
     }
-    const navigate = useNavigate();
-
-    const onClick = () => {
-        if(id === User.id && pw === User.pw) {
-            alert('로그인 했습니다.');
-            navigate('/');
-
-        }else {
-            alert('등록되지 않은 회원이거나 입력한 값이 일치하지 않습니다.');
+    
+    const onClick = async() => {
+        if(!id || !pw){
+            alert("아이디와 비밀번호를 모두 입력해주세요.");
+            return;
         }
-        setInputs({id: "", pw: ""});
+        navigate('/');
     }
 
     return(

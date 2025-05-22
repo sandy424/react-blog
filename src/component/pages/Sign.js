@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Link, useNavigate } from 'react-router-dom';
 import '../style/Style.css';
 
-function Sign() {
+export default function Sign() {
 
     const navigate = useNavigate();
 
@@ -27,20 +27,9 @@ function Sign() {
             alert("비밀번호는 8자 이상이어야 합니다.");
             return;
         }
-        /* 서버와 통신 추가 */  
-        const response = await fetch('/api/sign', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ id,pw })
-        });
-        const data = await response.json();
         
-        if(response.ok){
-            alert('회원가입이 완료되었습니다.');
-            navigate('/Login');
-        } else{
-            alert("존재하지 않는 회원입니다. 다시 시도해주세요.");
-        } 
+        alert('회원가입이 완료되었습니다.');
+        navigate('/Login');
     }
 
     return(
@@ -73,5 +62,3 @@ function Sign() {
                 </div>
     );
 }
-
-export default Sign;
