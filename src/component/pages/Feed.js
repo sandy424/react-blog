@@ -1,10 +1,13 @@
 import React from 'react';
 import {Link, useNavigate} from 'react-router-dom';
-import '../style/Style.css';
+
 
 export default function Feed() {
     const navigate = useNavigate();
+    /* 스타일 */
+    const style = {
 
+    }
     return(
         <>
             <div className='category'>
