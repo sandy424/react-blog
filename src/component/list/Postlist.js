@@ -7,6 +7,7 @@ const Wrapper = Styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    margin: 16px;
 `;
 
 function PostList(props){

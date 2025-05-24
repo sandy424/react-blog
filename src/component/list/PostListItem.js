@@ -2,9 +2,10 @@ import React from 'react';
 import Styled from 'styled-components';
 
 const Wrapper = Styled.div`
-    width: calc(100% - 32px);
+    width: calc(100% - 50px);
     display: flex;
-    padding: 16px;
+    padding-left: 16px;
+    margin-bottom: 10px;
     border: 1px solid gray;
     border-radius: 8px;
     cursor: pointer;
@@ -12,7 +13,7 @@ const Wrapper = Styled.div`
 
 `;
 const TitleText = Styled.p`
-    font-size: 20px;
+    font-size: 16px;
     font-weigth: 500;
 `;
 function PostListItem(props){

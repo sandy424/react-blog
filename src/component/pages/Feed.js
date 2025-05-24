@@ -1,24 +1,35 @@
 import React from 'react';
-import {Link, useNavigate} from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
+import styled from 'styled-components';
+import PostList from '../list/Postlist';
+import Button from '../ui/Button';
+import data from '../../data';
 
-
-export default function Feed() {
+const Wrapper = styled.div`
+    padding: 16px;
+    width: calc(100%-32px);
+    display: flex;
+    align-itmes: center;
+    justify-content: center;
+`;
+const Containter = styled.div`
+    width: 100%;
+    max-width: 720px;
+`;
+export default function Feed(props) {
     const navigate = useNavigate();
-    /* 스타일 */
-    const style = {
-
-    }
+    
     return(
-        <>
-            <div className='category'>
-            <h4></h4>
-            </div>
-            <div>
-                <div className=''>
-                    
-                </div>
-            </div>
-        </>
-        
+        <Wrapper>
+            <Containter>
+                <Button title="작성" onClick={() => {
+                    navigate("/post");
+                }}/>
+            
+            <PostList posts={data} onClickItem={(item) => {
+                navigate(`/post/${item.id}`);
+            }}/>
+            </Containter>
+        </Wrapper>
     );
 }
