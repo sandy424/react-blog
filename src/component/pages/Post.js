@@ -43,10 +43,21 @@ function Post(props){
     const {postId} = useParams();
 
     const post = data.find((item) => {
-        return item.id == postId;
+        return item.id === postId;
     });
 
     const [comment, setComment] = useState("");
+
+    if(!post) {
+        return(
+            <Wrapper>
+                <Container>
+                    <p>게시글을 찾을 수 없습니다.</p>
+                    <Button title="뒤로 가기" onClick={() => navigate("/Feed")}/>
+                </Container>
+            </Wrapper>
+        );
+    }
 
     return(
         <Wrapper>

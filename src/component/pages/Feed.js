@@ -23,11 +23,11 @@ export default function Feed(props) {
         <Wrapper>
             <Containter>
                 <Button title="작성" onClick={() => {
-                    navigate("/post");
+                    navigate("/Postwrite");
                 }}/>
             
             <PostList posts={data} onClickItem={(item) => {
-                navigate(`/post/${item.id}`);
+                navigate(`/Post/${item.id}`);
             }}/>
             </Containter>
         </Wrapper>
