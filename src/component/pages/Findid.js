@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Link, useNavigate} from 'react-router-dom';
 import '../style/Style.css';
 
-export default function Login() {
+export default function Findid() {
 
     const [inputs, setInputs] = useState({id: "", pw: ""});
     const {id, pw} = inputs;
@@ -52,7 +52,7 @@ export default function Login() {
                 </div>
                 <div style={{marginTop: "18px"}} className='signView'>
                     <Link style={{marginRight: "10px"}} className='findLink' to={'/Findid'}>아이디 찾기</Link>
-                    <Link className='findLink' to={'/Findpw'}>비밀번호 찾기</Link>
+                    <Link className='findLink' to={'/Findid'}>비밀번호 찾기</Link>
                 </div>
             </div>
         </div>
