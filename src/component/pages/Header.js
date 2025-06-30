@@ -14,14 +14,15 @@ function Header() {
                         <img className="logo" src={logo} alt="URblog"/>
                     </Link>
                 </div>
-                
+                <nav>
+                    <Link className="menu" to={'/Feed'}>피드 보기</Link>
+                    <Link className="menu" to={'/Post'}>업로드</Link>
+                </nav>
                 <div className="login-box">
-                    <Link to={'/Login'}>
-                        <span className="login">Login</span>
-                    </Link>
+                    <Link className="login" to={'/Login'}>Login</Link>
                     <div className="profile-box">
                         <img src={profile} className="icon profile"/>
-                        <img src={menu} className="icon menu"/>
+                        <img src={menu} className="icon bar"/>
                     </div>
                 </div>
             </div>

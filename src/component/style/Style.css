@@ -13,6 +13,13 @@
     width: 80%;
     height: 40px;
 }
+.menu {
+    color: black;
+    font-size: 17px;
+    text-decoration-line: none;
+    font-weight: 550;
+    margin: 0 40px;
+}
 .login-box {
     display: flex;
     align-items: center;
@@ -20,8 +27,10 @@
 }
 .login {
     color: black;
+    font-weight: 500;
     font-size: 15px;
     margin-right: 16px;
+    text-decoration-line: none;
 }
 
 .profile-box {
@@ -41,7 +50,7 @@
     top: 4px;
     left: 8px;
 }
-.menu {
+.bar {
     z-index: 2;
     right: 8px;
     top: 4px;
