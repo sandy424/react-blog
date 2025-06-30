@@ -2,29 +2,50 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: lightgray;
+    background-color: rgb(209, 241, 252);
     padding: 15px 0px;
     align-items: center;
     top: 0;
     
 }
-.menu-group {
+.logo {
+    margin-left: 40px;
+    width: 80%;
+    height: 40px;
+}
+.login-box {
     display: flex;
     align-items: center;
-    margin-right: 28px;
+    margin-right: 40px;
+}
+.login {
+    color: black;
+    font-size: 15px;
+    margin-right: 16px;
+}
+
+.profile-box {
+    position: relative;
+    width: 90px;
+    height: 45px;
+    background-color: white;
+    border-radius: 38%;
+}
+.icon {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+}
+.profile {
+    z-index: 1;
+    top: 4px;
+    left: 8px;
 }
 .menu {
-    color: black;
-    margin-left: 20px;
-    text-decoration: none;
-    font-size: 16px;
+    z-index: 2;
+    right: 8px;
+    top: 4px;
 }
-
-.mainLogo {
-    font-weight: 600;
-    font-size: 20px;
-}
-
 .main{
     font-family: 'Cafe24Ssurround', sans-serif;
     display: flex;

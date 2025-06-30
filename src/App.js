@@ -7,7 +7,8 @@ import Sign from './component/pages/Sign';
 import Feed from './component/pages/Feed';
 import PostWrite from './component/pages/PostWrite';
 import Post from './component/pages/Post';
-import Findid from '.component/pages/Findid';
+import Findid from './component/pages/Findid';
+import Findpw from './component/pages/Findpw';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/PostWrite' element={<PostWrite/>}/>
         <Route path='/Post/:id' element={<Post/>}/>
         <Route path='/Findid' element={<Findid/>}/>
+        <Route path='/Findpw' element={<Findpw/>}/>
       </Routes>
     </div>
   );

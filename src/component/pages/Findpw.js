@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Link, useNavigate} from 'react-router-dom';
 import '../style/Style.css';
 
-export default function Findid() {
+export default function Findpw() {
 
     const [inputs, setInputs] = useState({id: "", pw: ""});
     const {id, pw} = inputs;
