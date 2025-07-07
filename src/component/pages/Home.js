@@ -1,6 +1,7 @@
 import React from "react";
 import '../style/Style.css';
 import search from '../../img/search button.png';
+import next from '../../img/next button.png';
 
 function Home() {
     return(
@@ -21,6 +22,9 @@ function Home() {
                     <div className="feed-box">
                         <div className="thumb"></div>
                         <p><strong>title</strong><br/>내용</p>
+                    </div>
+                    <div className="next-btn">
+                        <img src={next}/>
                     </div>
                 </div>
                 {/* 검색창 */}
