@@ -20,7 +20,7 @@ function App() {
         <Route path='/Sign' element={<Sign/>}/>
         <Route path='/Feed' element={<Feed/>}/>
         <Route path='/PostWrite' element={<PostWrite/>}/>
-        <Route path='/Post/:id' element={<Post/>}/>
+        <Route path='/Post' element={<Post/>}/>
         <Route path='/Findid' element={<Findid/>}/>
         <Route path='/Findpw' element={<Findpw/>}/>
       </Routes>
