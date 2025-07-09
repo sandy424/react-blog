@@ -8,7 +8,7 @@ function Home() {
         <nav className="nav">
             <div className="top-wrapper">
                 <h2>오늘의 Top</h2>
-
+                
                 <div className="boxs">
                     {/* 게시물 박스들 */}
                     <div className="feed-box">

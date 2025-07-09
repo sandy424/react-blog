@@ -81,7 +81,8 @@
 .nav h2{
     align-self: flex-start;
     text-align: left;
-    margin-left: 58px;
+    margin-left: 40px;
+    margin-bottom: 0;
 }
 .boxs{
     display: flex;
@@ -89,8 +90,8 @@
     gap: 85px;
 }
 .feed-box{
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
     text-align: left;
     margin-top: 18px;
 }
@@ -216,28 +217,33 @@
     cursor: pointer;
 }
 
-/* 피드 페이지 */
-.category {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 180px;
-    top: 90px;
-    bottom: 30px;
-    padding: 20px;
-    background-color: rgb(247, 247, 232);
-    border: 1.5px solid black;
-    left: 8%;
-    border-radius: 13px;
-    text-align: left;
+/* 업로드 페이지 */
+.Post {
+    padding: 30px;
+    padding-left: 30px;
 }
-.upload {
-    display: flex;
-    position: absolute;
-    width: 70px;
-    height: 20px;
-    padding: 10px;
-    background-color: beige;
-    cursor: pointer;
-    border-radius: 13px;
+.Post div{
+    margin-top: 40px;
+    margin-left: 50px;
+}
+#title_txt{
+    width: 68%;
+    padding-bottom: 30px;
+    border: none;
+    font-size: 22px;
+    border-bottom: solid 1px lightgray;
+    font-weight: bold;
+    margin-left: 20px;
+}
+#title_txt:focus{
+    outline: none;
+}
+#content_txt {
+    width: 65%;
+    resize: none;
+    border: none;
+    height: 500px;
+}
+#content_txt:focus{
+    outline: none;
 }
