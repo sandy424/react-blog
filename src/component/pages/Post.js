@@ -10,8 +10,7 @@ function Post(){
             </div>
 
             <div>
-                내용
-                <textarea id='content_text' placeholder='내용을 입력하세요.'></textarea>
+                <textarea id='content_txt' placeholder='내용을 입력하세요.'></textarea>
             </div>
         </div>
     )
