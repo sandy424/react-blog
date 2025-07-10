@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Link, useNavigate} from 'react-router-dom';
 import '../style/Style.css';
 
-export default function Login() {
+export default function Login({setLogin}) {
 
     const [inputs, setInputs] = useState({id: "", pw: ""});
     const {id, pw} = inputs;
@@ -21,6 +21,8 @@ export default function Login() {
             alert("아이디와 비밀번호를 모두 입력해주세요.");
             return;
         }
+        setLogin(true);
+        alert('로그인되었습니다.')
         navigate('/');
     }
 
