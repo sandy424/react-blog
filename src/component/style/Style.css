@@ -27,11 +27,13 @@
     margin-right: 40px;
 }
 .login {
+    all: unset;
     color: black;
     font-weight: 500;
     font-size: 15px;
-    margin-right: 16px;
+    margin-right: 26px;
     text-decoration-line: none;
+    cursor: pointer;
 }
 
 .profile-box {
@@ -94,9 +96,11 @@
     height: 150px;
     text-align: left;
     margin-top: 18px;
+    cursor: pointer;
+
 }
 .feed-box p{
-    font-size: 18px;
+    font-size: 13px;
 }
 .thumb{
     width: 160px;
@@ -177,6 +181,7 @@
     border: none;
     font-size: 12px;
     font-weight: 400;
+    letter-spacing: 1.25px;
 }
 .inputWrap {
     display: flex;
@@ -251,5 +256,14 @@
 #content_txt:focus{
     outline: none;
 }
-로그인 화면 - 로그아웃 변환 생성
-업로드 화면 - 등록 버튼 생성
+.submit-btn{
+    position: absolute;
+    right: 240px;
+    bottom: 4px;
+    width: 68px;
+    height: 40px;
+    background-color: white;
+    border: solid 1px lightblue;
+    cursor: pointer;
+    font-size: 16px;
+}
