@@ -22,6 +22,10 @@ function Post(){
     return(
         <div className='Post'>
             <div>
+                <button className="submit-btn" onClick={submit}>등록</button>
+            </div>
+
+            <div>
                 <input type='text' id='title_txt' name="title" placeholder='제목' value={title}
                  onChange={(e) => setTitle(e.target.value)}/>
             </div>
@@ -30,8 +34,6 @@ function Post(){
                 <textarea id='content_txt' name='contents' placeholder='내용을 입력하세요.' value={contents}
                 onChange={(e) => setContents(e.target.value)}></textarea>
             </div>
-
-            <button className="submit-btn" onClick={submit}>등록</button>
         </div>
     )
 }

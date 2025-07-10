@@ -246,24 +246,27 @@
 }
 #content_txt {
     width: 65%;
+    
     resize: none;
     border: none;
-    height: 500px;
+    height: auto;
+    min-height: 500px;
     font-size: 16px;
     font-weight: 200;
-
+    overflow: hidden;
 }
 #content_txt:focus{
     outline: none;
 }
 .submit-btn{
     position: absolute;
-    right: 240px;
-    bottom: 4px;
+    right: 260px;
+    top: 90px;
     width: 68px;
     height: 40px;
     background-color: white;
     border: solid 1px lightblue;
     cursor: pointer;
     font-size: 16px;
+    z-index: 1000;
 }
